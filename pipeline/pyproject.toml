@@ -1,0 +1,27 @@
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transit-pipeline"
+version = "0.1.0"
+description = "GTFS processing pipeline for transit routes"
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=2.2",
+    "shapely>=2.0",
+    "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.9"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,39 @@
+
+# Python
+**/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Local transit datasets
+/data/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+
+# Credentials
+*.pem
+*.key
+
+# System
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
